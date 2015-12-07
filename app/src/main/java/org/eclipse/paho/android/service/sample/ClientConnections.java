@@ -82,6 +82,8 @@ public class ClientConnections extends ListActivity {
     super.onCreate(savedInstanceState);
 
     ListView connectionList = getListView();
+
+
     connectionList.setOnItemLongClickListener(new LongClickItemListener());
     connectionList.setTextFilterEnabled(true);
     arrayAdapter = new ArrayAdapter<Connection>(this,
